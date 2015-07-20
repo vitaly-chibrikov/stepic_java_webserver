@@ -17,7 +17,7 @@ public class PageGenerator {
     private static final String HTML_DIR = "templates";
 
     private static PageGenerator pageGenerator;
-    private final Configuration cfg = new Configuration();
+    private final Configuration cfg;
 
     public static PageGenerator instance(){
         if(pageGenerator == null)
@@ -37,5 +37,6 @@ public class PageGenerator {
     }
 
     private PageGenerator() {
+        cfg = new Configuration();
     }
 }
