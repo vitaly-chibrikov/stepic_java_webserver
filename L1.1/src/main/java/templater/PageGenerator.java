@@ -12,6 +12,10 @@ import java.util.Map;
 
 /**
  * @author v.chibrikov
+ *         <p>
+ *         Пример кода для курса на https://stepic.org/
+ *         <p>
+ *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
  */
 public class PageGenerator {
     private static final String HTML_DIR = "templates";
@@ -19,8 +23,8 @@ public class PageGenerator {
     private static PageGenerator pageGenerator;
     private final Configuration cfg;
 
-    public static PageGenerator instance(){
-        if(pageGenerator == null)
+    public static PageGenerator instance() {
+        if (pageGenerator == null)
             pageGenerator = new PageGenerator();
         return pageGenerator;
     }
