@@ -11,20 +11,20 @@ import java.util.Map;
  *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
  */
 public class AccountService {
-    private final Map<String, UserProfile> nameToProfile;
+    private final Map<String, UserProfile> loginToProfile;
     private final Map<String, UserProfile> sessionIdToProfile;
 
     public AccountService() {
-        nameToProfile = new HashMap<>();
+        loginToProfile = new HashMap<>();
         sessionIdToProfile = new HashMap<>();
     }
 
     public void addNewUser(UserProfile userProfile) {
-        nameToProfile.put(userProfile.getName(), userProfile);
+        loginToProfile.put(userProfile.getLogin(), userProfile);
     }
 
-    public UserProfile getUserByName(String name) {
-        return nameToProfile.get(name);
+    public UserProfile getUserByLogin(String login) {
+        return loginToProfile.get(login);
     }
 
     public UserProfile getUserBySessionId(String sessionId) {

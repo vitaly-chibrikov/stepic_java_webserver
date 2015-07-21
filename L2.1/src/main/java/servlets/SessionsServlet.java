@@ -44,16 +44,16 @@ public class SessionsServlet extends HttpServlet {
     //sign in
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("name");
+        String login = request.getParameter("login");
         String pass = request.getParameter("pass");
 
-        if (name == null || pass == null) {
+        if (login == null || pass == null) {
             response.setContentType("text/html;charset=utf-8");
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
 
-        UserProfile profile = accountService.getUserByName(name);
+        UserProfile profile = accountService.getUserByLogin(login);
         if (profile == null || !profile.getPass().equals(pass)) {
             response.setContentType("text/html;charset=utf-8");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);

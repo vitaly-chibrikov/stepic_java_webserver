@@ -8,24 +8,24 @@ package accounts;
  *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
  */
 public class UserProfile {
-    private final String name;
+    private final String login;
     private final String pass;
     private final String email;
 
-    public UserProfile(String name, String pass, String email) {
-        this.name = name;
+    public UserProfile(String login, String pass, String email) {
+        this.login = login;
         this.pass = pass;
         this.email = email;
     }
 
-    public UserProfile(String name) {
-        this.name = name;
-        this.pass = name;
-        this.email = name;
+    public UserProfile(String login) {
+        this.login = login;
+        this.pass = login;
+        this.email = login;
     }
 
-    public String getName() {
-        return name;
+    public String getLogin() {
+        return login;
     }
 
     public String getPass() {

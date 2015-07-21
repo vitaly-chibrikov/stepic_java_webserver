@@ -16,7 +16,7 @@ import java.io.IOException;
  *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
  */
 public class UsersServlet extends HttpServlet {
-    @SuppressWarnings("FieldCanBeLocal") //todo: remove after module 2 home work
+    @SuppressWarnings({"FieldCanBeLocal", "UnusedDeclaration"}) //todo: remove after module 2 home work
     private final AccountService accountService;
 
     public UsersServlet(AccountService accountService) {
