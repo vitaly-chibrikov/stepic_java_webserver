@@ -52,8 +52,7 @@ public class ReflectionHelper {
                 case DOUBLE:
                     field.set(object, Double.valueOf(value));
                     break;
-                case OBJECT:
-                default:
+                case STRING:
                     field.set(object, value);
             }
 

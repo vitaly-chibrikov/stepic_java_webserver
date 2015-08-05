@@ -1,7 +1,5 @@
 package reflection;
 
-import java.util.Arrays;
-
 /**
  * @author v.chibrikov
  *         <p>
@@ -18,16 +16,10 @@ public enum Types {
     FLOAT,
     LONG,
     DOUBLE,
-    OBJECT;
-
-    private static final String ALL_TYPES_STRING = Arrays.toString(Types.values());
+    STRING;
 
     public static Types getType(Class<?> clazz) {
         String className = clazz.getSimpleName().toUpperCase();
-        if (ALL_TYPES_STRING.contains(className)) {
-            return Types.valueOf(className);
-        } else {
-            return Types.OBJECT;
-        }
+        return Types.valueOf(className);
     }
 }
