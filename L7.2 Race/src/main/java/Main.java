@@ -2,6 +2,13 @@ import java.util.Date;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author v.chibrikov
+ *         <p>
+ *         Пример кода для курса на https://stepic.org/
+ *         <p>
+ *         Описание курса и лицензия: https://github.com/vitaly-chibrikov/stepic_java_webserver
+ */
 public class Main {
     private static final int HUNDRED_MILLION = 100_000_000;
     private static final int THREADS_NUMBER = 2;
