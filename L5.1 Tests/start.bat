@@ -1,0 +1,1 @@
+java -jar GoEuroTest.jar Berlin
