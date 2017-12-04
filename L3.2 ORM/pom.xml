@@ -8,8 +8,9 @@
     <artifactId>L3.2</artifactId>
     <version>1.0</version>
 
-
     <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <com.h2database.h2.version>1.4.187</com.h2database.h2.version>
         <mysql.mysql-connector-java.version>5.1.35</mysql.mysql-connector-java.version>
         <org.hibernate.hibernate-core.version>4.3.10.Final</org.hibernate.hibernate-core.version>
